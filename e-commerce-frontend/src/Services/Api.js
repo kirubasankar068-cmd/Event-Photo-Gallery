@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000"; // change to your backend
+const BASE_URL = "https://event-photo-gallery.onrender.com"; // change to your backend
 
 const api = axios.create({
   baseURL: BASE_URL,
