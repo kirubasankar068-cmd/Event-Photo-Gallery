@@ -1,0 +1,56 @@
+@layer components {
+  .gallery-page {
+    @apply w-full max-w-5xl mx-auto px-6 pt-8 pb-12;
+  }
+
+  .gallery-header h1 {
+    @apply text-3xl font-semibold mb-1;
+  }
+
+  .gallery-header p {
+    @apply text-gray-400 mb-6;
+  }
+
+  .gallery-grid {
+    @apply grid gap-5;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .gallery-card {
+    @apply bg-slate-900 rounded-2xl shadow-xl flex flex-col overflow-hidden;
+  }
+
+  .gallery-image-wrapper {
+    position: relative;
+    padding-top: 70%;
+    overflow: hidden;
+  }
+
+  .gallery-image-wrapper img {
+    @apply w-full h-full object-cover;
+    position: absolute;
+    inset: 0;
+    transition: transform 0.25s ease;
+  }
+
+  .gallery-card:hover .gallery-image-wrapper img {
+    transform: scale(1.05);
+  }
+
+  .gallery-card-body {
+    @apply px-4 py-3;
+  }
+
+  .gallery-card-body h3 {
+    @apply text-base font-medium mb-1;
+  }
+
+  .gallery-card-body p {
+    @apply text-xs text-gray-400;
+  }
+
+  .gallery-loading,
+  .gallery-empty {
+    @apply text-center py-8 text-gray-400;
+  }
+}

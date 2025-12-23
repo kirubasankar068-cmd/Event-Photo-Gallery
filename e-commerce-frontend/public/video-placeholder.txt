@@ -1,0 +1,3 @@
+# This is a placeholder for video.mp4
+# Place your actual video file here: /public/video.mp4
+# The video should be in MP4 format for best browser compatibility
