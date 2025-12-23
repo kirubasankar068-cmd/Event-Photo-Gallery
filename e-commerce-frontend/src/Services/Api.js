@@ -7,9 +7,9 @@ const api = axios.create({
   withCredentials: true, // if you use cookies
 });
 
-export const getPhotos = () => api.get("/api/photos");
+export const getPhotos = () => api.get("/photos");
 export const uploadPhoto = (data) =>
-  api.post("/api/photos", data, {
+  api.post("/photos", data, {
     headers: { "Content-Type": "multipart/form-data" },
   });
 
